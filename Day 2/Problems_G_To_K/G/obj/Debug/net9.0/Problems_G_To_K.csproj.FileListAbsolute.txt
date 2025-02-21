@@ -1,0 +1,14 @@
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/bin/Debug/net9.0/Problems_G_To_K
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/bin/Debug/net9.0/Problems_G_To_K.deps.json
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/bin/Debug/net9.0/Problems_G_To_K.runtimeconfig.json
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/bin/Debug/net9.0/Problems_G_To_K.dll
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/bin/Debug/net9.0/Problems_G_To_K.pdb
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/obj/Debug/net9.0/Problems_G_To_K.GeneratedMSBuildEditorConfig.editorconfig
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/obj/Debug/net9.0/Problems_G_To_K.AssemblyInfoInputs.cache
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/obj/Debug/net9.0/Problems_G_To_K.AssemblyInfo.cs
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/obj/Debug/net9.0/Problems_G_To_K.csproj.CoreCompileInputs.cache
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/obj/Debug/net9.0/Problems_G_To_K.dll
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/obj/Debug/net9.0/refint/Problems_G_To_K.dll
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/obj/Debug/net9.0/Problems_G_To_K.pdb
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/obj/Debug/net9.0/Problems_G_To_K.genruntimeconfig.cache
+/home/omar/Projects/Day2/Problems_G_To_K/Problems_G_To_K/obj/Debug/net9.0/ref/Problems_G_To_K.dll
