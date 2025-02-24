@@ -1,3 +1,4 @@
+/* Start Task-1 */
 .Task-1 {
     padding: 20px;
     margin: 10px;
@@ -13,9 +14,63 @@
 }
 
 .div-2 {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .div-3 {
     opacity: 0.3;
 }
+/* End Task-1 */
+
+/* Start Task-2 */
+.task-2{
+    color: white;
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+.task-2-shape-1 {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(199, 198, 201);
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 10px;
+
+}
+.task-2-shape-2 {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(199, 198, 201);
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-y;
+    padding: 20px;
+    margin: 10px;
+
+}
+.task-2-shape-3 {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(199, 198, 201);
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-x;
+    padding: 20px;
+    margin: 10px;
+
+}
+.task-2-shape-4 {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(199, 198, 201);
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat;
+    padding: 20px;
+    margin: 10px;
+
+}
+/* End Task-2 */
+
+
