@@ -1,0 +1,205 @@
+/* Start Task-1 */
+.Task-1 {
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: rgb(116, 29, 216);
+}
+
+.div-1 {
+    opacity: 1;
+
+}
+
+.div-2 {
+    opacity: 0.5;
+}
+
+.div-3 {
+    opacity: 0.3;
+}
+/* End Task-1 */
+
+/* Start Task-2 */
+.task-2{
+    color: white;
+    font-family: Arial;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+.task-2-shape-1 {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(199, 198, 201);
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: no-repeat;
+
+}
+.task-2-shape-2 {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(199, 198, 201);
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-y;
+
+}
+.task-2-shape-3 {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(199, 198, 201);
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat-x;
+
+}
+.task-2-shape-4 {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(199, 198, 201);
+    background-image: url('css-assignment-5-8.png');
+    background-repeat: repeat;
+
+}
+/* End Task-2 */
+
+/* Start Task-3 */
+
+.task-3{
+    display: flex; 
+    gap: 20px;
+}
+.box {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    text-align: center;
+    background-color: lightgray;
+    margin: 10px;
+}
+
+.shape1 {
+    border: 5px solid red;
+    outline: 10px solid black;
+}
+
+.shape2 {
+    border: 5px solid;
+    border-color: blue green; 
+    outline: 10px solid black;
+}
+
+.shape3 {
+    border: 5px dashed;
+    border-color: blue green red yellow; 
+    outline: 10px solid black;
+}
+
+/* End Task-3 */
+
+/* Start Task-4 */
+
+.task-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px;
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 20px;
+    width: 400px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.element::before {
+    content: "";
+    width: 8px;
+    height: 80%;
+    position: absolute;
+    left: 0;
+}
+
+.element-1::before {
+    background-color: #c2185b; 
+}
+
+.element-2::before {
+    background-color: #00897b; 
+}
+
+/* End Task-4 */
+
+/* Start Task-5 */
+
+.task-5 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+p {
+    margin: 20px 0;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 50px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.small-bold {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* End Task-5 */
+
+/* Start Task-6 */
+
+.task-6 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: auto;
+}
+
+.ta {
+    background-color: #d3d3d3;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.full-width {
+    grid-column: span 3;
+}
+
+.one-third {
+    grid-column: span 1;
+}
+
+.one-half {
+    grid-column: span 1.5;
+}
+
+.one-fourth {
+    grid-column: span 1;
+}
+
+/* End Task-6 */
