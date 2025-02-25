@@ -73,4 +73,37 @@
 }
 /* End Task-2 */
 
+/* Start Task-3 */
+
+.task-3{
+    display: flex; 
+    gap: 20px;
+}
+.box {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    text-align: center;
+    background-color: lightgray;
+    margin: 10px;
+}
+
+.shape1 {
+    border: 5px solid red;
+    outline: 10px solid black;
+}
+
+.shape2 {
+    border: 5px solid;
+    border-color: blue green; 
+    outline: 10px solid black;
+}
+
+.shape3 {
+    border: 5px dashed;
+    border-color: blue green red yellow; 
+    outline: 10px solid black;
+}
+
+/* End Task-3 */
+
 
