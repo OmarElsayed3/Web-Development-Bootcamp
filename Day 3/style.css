@@ -143,4 +143,32 @@
 
 /* End Task-4 */
 
+/* Start Task-5 */
+
+.task-5 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+p {
+    margin: 20px 0;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 50px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.small-bold {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* End Task-5 */
 
