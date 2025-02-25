@@ -172,3 +172,41 @@ p {
 
 /* End Task-5 */
 
+/* Start Task-6 */
+
+.task-6 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: auto;
+}
+
+.ta {
+    background-color: #d3d3d3;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.full-width {
+    grid-column: span 3;
+}
+
+.one-third {
+    grid-column: span 1;
+}
+
+.one-half {
+    grid-column: span 1.5;
+}
+
+.one-fourth {
+    grid-column: span 1;
+}
+
+/* End Task-6 */
