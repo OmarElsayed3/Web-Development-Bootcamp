@@ -106,4 +106,41 @@
 
 /* End Task-3 */
 
+/* Start Task-4 */
+
+.task-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px;
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 20px;
+    width: 400px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.element::before {
+    content: "";
+    width: 8px;
+    height: 80%;
+    position: absolute;
+    left: 0;
+}
+
+.element-1::before {
+    background-color: #c2185b; 
+}
+
+.element-2::before {
+    background-color: #00897b; 
+}
+
+/* End Task-4 */
+
 
