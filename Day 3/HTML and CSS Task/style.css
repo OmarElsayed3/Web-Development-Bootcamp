@@ -36,7 +36,7 @@
     width: 400px;
     height: 400px;
     background-color: rgb(199, 198, 201);
-    background-image: url('css-assignment-5-8.png');
+    background-image: url('/Images/css-assignment-5-8.png');
     background-repeat: no-repeat;
 
 }
@@ -44,7 +44,7 @@
     width: 400px;
     height: 400px;
     background-color: rgb(199, 198, 201);
-    background-image: url('css-assignment-5-8.png');
+    background-image: url('/Images/css-assignment-5-8.png');
     background-repeat: repeat-y;
 
 }
@@ -52,7 +52,7 @@
     width: 400px;
     height: 400px;
     background-color: rgb(199, 198, 201);
-    background-image: url('css-assignment-5-8.png');
+    background-image: url('/Images/css-assignment-5-8.png');
     background-repeat: repeat-x;
 
 }
@@ -60,7 +60,7 @@
     width: 400px;
     height: 400px;
     background-color: rgb(199, 198, 201);
-    background-image: url('css-assignment-5-8.png');
+    background-image: url('/Images/css-assignment-5-8.png');
     background-repeat: repeat;
 
 }
