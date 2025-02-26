@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+div {
+    position: relative;
+    width: 600px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    caret-color: red; 
+}
+
+span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, red 50%, teal 50%);
+}
