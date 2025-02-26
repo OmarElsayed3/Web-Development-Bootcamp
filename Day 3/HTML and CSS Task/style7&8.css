@@ -1,0 +1,67 @@
+/*Start Task 7 */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+table thead tr td {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+table td {
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+}
+table img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ddd;
+}
+button {
+    padding: 10px;
+    color: white;
+    border: none;
+}
+.view {
+    background-color: #179fdf;
+}
+.delete {
+    background-color: #e91e63;
+}
+/*End Task 7 */
+
+/*Start Task 8 */
+.Task8 {
+    background-color: #eee;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+    width: 1000px;
+    padding: 40px 0px;
+    margin: auto;
+    position: relative;
+}
+
+.Task8::before {
+    content: "1";
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    left: -40px;
+    top: 20px;
+}
+/*End Task 8 */
