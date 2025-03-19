@@ -27,18 +27,16 @@
 }
 
 .result {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 .result .box {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px;
-  width: 30%;
-  margin-bottom: 10px;
   color: white;
   font-weight: bold;
   font-size: 16px;
