@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Movie</title>
+    <link rel="stylesheet" href="./SCSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="globel">
+        <div class="container">
+            <nav>
+                <div class="brand">
+                    <span class="new-badge">NEW</span> MOVIE
+                </div>
+                <nav class="nav-links">
+                    <a href="#" class="nav-item active">New Movie</a>
+                    <a href="#" class="nav-item">Genre</a>
+                    <a href="#" class="nav-item">Country</a>
+                    <a href="#" class="nav-item">Movie</a>
+                    <a href="#" class="nav-item">TV Series</a>
+                    <div class="search">
+                        <span>|</span>
+                        <div class="search-container">
+                            <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input type="text" id="search-box" placeholder="Search" style="display: none;">
+                        </div>
+                    </div>
+                </nav>
+            </nav>
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 id="movie-title"></h1>
+                    <div class="tag">
+                        <span class="tag-imdb">IMDb</span> <span class="imdb"></span>
+                    </div>
+                    <p id="movie-description"></p>
+                    <button class="watch-trailer">Watch Trailer</button>
+                    <button class="watch-now">
+                        <i class="fa-solid fa-play"></i>
+                        <span>Watch Now</span>
+                    </button>
+                </div>
+            </div>
+            <div class="movie-slider">
+                <button type="button" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button type="button" class="next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="movies-container">
+            <div id="movies" class="movies"></div>
+        </div>
+    </div>
+    
+
+
+    <script src="./Types/script.js"></script>
+</body>
+</html>
