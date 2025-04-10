@@ -16,7 +16,7 @@ class MovieApp {
     private prevButton: HTMLElement;
     private nextButton: HTMLElement;
     private moviesData: Array<any> = [];
-    private currentMovieIndex: number = 4;
+    private currentMovieIndex: number = 0;
 
     constructor() {
         this.moviesContainer = document.getElementById("movies")!;
@@ -44,9 +44,9 @@ class MovieApp {
                 movi.backdrop_path,
                 movi.vote_count
             ));
-            this.update(this.moviesData[4],4);
+            this.update(this.moviesData[0],0);
             this.displayMovies();
-            this.highlightMovie(4);
+            this.highlightMovie(0);
         } catch (error) {
             console.error("Error fetching movies:", error);
         }
@@ -74,6 +74,7 @@ class MovieApp {
             } else {
                 const query = searchBox.value.trim();
                 if (query) {
+                    this.currentMovieIndex = 0;
                     this.fetchMovies(query);
                 }
             }
@@ -82,6 +83,7 @@ class MovieApp {
             if (e.key === "Enter") {
                 const query = searchBox.value.trim();
                 if (query) {
+                    this.currentMovieIndex = 0;
                     this.fetchMovies(query);
                 }
             }
@@ -135,7 +137,9 @@ class MovieApp {
     }
 
     private scrollPrev() {
-        if (this.currentMovieIndex <= 0) return;
+        if (this.currentMovieIndex <= 0) {
+            this.currentMovieIndex = this.moviesData.length;
+        }
         const prevMovie = this.moviesData[this.currentMovieIndex - 1];
         this.update(prevMovie, this.currentMovieIndex - 1);
         this.highlightMovie(this.currentMovieIndex - 1);
@@ -143,7 +147,9 @@ class MovieApp {
     }
 
     private scrollNext() {
-        if (this.currentMovieIndex >= this.moviesData.length - 1) return;
+        if (this.currentMovieIndex >= this.moviesData.length - 1) {
+            this.currentMovieIndex = -1;
+        }
         const nextMovie = this.moviesData[this.currentMovieIndex + 1];
         this.update(nextMovie, this.currentMovieIndex + 1);
         this.highlightMovie(this.currentMovieIndex + 1);

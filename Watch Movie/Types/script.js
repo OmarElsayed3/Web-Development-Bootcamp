@@ -50,7 +50,7 @@ var Movie = /** @class */ (function () {
 var MovieApp = /** @class */ (function () {
     function MovieApp() {
         this.moviesData = [];
-        this.currentMovieIndex = 4;
+        this.currentMovieIndex = 0;
         this.moviesContainer = document.getElementById("movies");
         this.prevButton = document.querySelector(".prev");
         this.nextButton = document.querySelector(".next");
@@ -74,9 +74,9 @@ var MovieApp = /** @class */ (function () {
                     case 2:
                         data = _a.sent();
                         this.moviesData = data.results.map(function (movi) { return new Movie(movi.title, movi.overview, movi.vote_average, movi.vote_count, movi.poster_path, movi.backdrop_path, movi.vote_count); });
-                        this.update(this.moviesData[4], 4);
+                        this.update(this.moviesData[0], 0);
                         this.displayMovies();
-                        this.highlightMovie(4);
+                        this.highlightMovie(0);
                         return [3 /*break*/, 4];
                     case 3:
                         error_1 = _a.sent();
@@ -111,6 +111,7 @@ var MovieApp = /** @class */ (function () {
             else {
                 var query = searchBox.value.trim();
                 if (query) {
+                    _this.currentMovieIndex = 0;
                     _this.fetchMovies(query);
                 }
             }
@@ -119,6 +120,7 @@ var MovieApp = /** @class */ (function () {
             if (e.key === "Enter") {
                 var query = searchBox.value.trim();
                 if (query) {
+                    _this.currentMovieIndex = 0;
                     _this.fetchMovies(query);
                 }
             }
@@ -162,16 +164,18 @@ var MovieApp = /** @class */ (function () {
         }
     };
     MovieApp.prototype.scrollPrev = function () {
-        if (this.currentMovieIndex <= 0)
-            return;
+        if (this.currentMovieIndex <= 0) {
+            this.currentMovieIndex = this.moviesData.length;
+        }
         var prevMovie = this.moviesData[this.currentMovieIndex - 1];
         this.update(prevMovie, this.currentMovieIndex - 1);
         this.highlightMovie(this.currentMovieIndex - 1);
         this.currentMovieIndex--;
     };
     MovieApp.prototype.scrollNext = function () {
-        if (this.currentMovieIndex >= this.moviesData.length - 1)
-            return;
+        if (this.currentMovieIndex >= this.moviesData.length - 1) {
+            this.currentMovieIndex = -1;
+        }
         var nextMovie = this.moviesData[this.currentMovieIndex + 1];
         this.update(nextMovie, this.currentMovieIndex + 1);
         this.highlightMovie(this.currentMovieIndex + 1);
