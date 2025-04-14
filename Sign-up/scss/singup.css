@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signup-container {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  border-radius: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  min-height: 600px;
+  overflow: hidden;
+}
+.signup-container .left-side {
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.signup-container .left-side .image-section {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-container .left-side .image-section .imag {
+  width: 100%;
+  height: 900px;
+  min-height: 500px;
+  max-height: 600px;
+  background-image: url("../images/signup-image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 40px;
+  position: relative;
+}
+
+.signup-container .right-side {
+  flex: 1.1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signup-container .right-side header {
+  text-align: right;
+}
+.signup-container .right-side header .logo {
+  width: 80px;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.signup-container .right-side .form-section {
+  flex: 1;
+  max-width: 500px;
+  padding: 2rem;
+  background: #fff;
+}
+.signup-container .right-side .form-section h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.signup-container .right-side .form-section p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: small;
+}
+.signup-container .right-side .form-section form {
+  margin: 30px 0px;
+}
+.signup-container .right-side .form-section form .name, .signup-container .right-side .form-section form .contact {
+  display: flex;
+  gap: 15px;
+}
+.signup-container .right-side .form-section form .form-group {
+  position: relative;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.signup-container .right-side .form-section form .form-group input {
+  position: relative;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.signup-container .right-side .form-section form .form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.signup-container .right-side .form-section form .form-group label {
+  position: absolute;
+  left: 12px;
+  top: -8px;
+  background-color: #fff;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #666;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+.signup-container .right-side .form-section form .form-group.password input {
+  padding-right: 57.5%;
+}
+.signup-container .right-side .form-section form .form-group.password .icon-eye {
+  position: absolute;
+  right: -3%;
+  top: 15px;
+  cursor: pointer;
+  color: #777;
+}
+.signup-container .right-side .form-section .checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.signup-container .right-side .form-section .checkbox-group input {
+  margin-right: 0.5rem;
+}
+.signup-container .right-side .form-section .checkbox-group label {
+  font-size: 0.9rem;
+  color: #666;
+}
+.signup-container .right-side .form-section .checkbox-group label a {
+  color: #f8170f;
+  text-decoration: none;
+}
+.signup-container .right-side .form-section .checkbox-group label a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.signup-container .right-side .form-section .btn-primary {
+  width: 100%;
+  padding: 0.8rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.signup-container .right-side .form-section .btn-primary:hover {
+  background: #0056b3;
+}
+.signup-container .right-side .form-section .login-link {
+  text-align: center;
+  margin: 1rem 0;
+}
+.signup-container .right-side .form-section .login-link a {
+  color: #f11c0d;
+  text-decoration: none;
+}
+.signup-container .right-side .form-section .login-link a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.signup-container .right-side .form-section .Sign-up-with {
+  margin: 1rem 0;
+  text-align: center;
+  color: #888;
+  font-size: clamp(12px, 2vw, 14px);
+  margin-bottom: 20px;
+  position: relative;
+}
+.signup-container .right-side .form-section .Sign-up-with::before, .signup-container .right-side .form-section .Sign-up-with::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 38%;
+  height: 1px;
+  background-color: #ddd;
+}
+.signup-container .right-side .form-section .Sign-up-with::before {
+  left: 0;
+}
+.signup-container .right-side .form-section .Sign-up-with::after {
+  right: 0;
+}
+.signup-container .right-side .form-section .social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.signup-container .right-side .form-section .social-buttons .social-btn {
+  flex: 1;
+  max-width: 150px;
+  padding: 12px;
+  border: 1px solid #2786df;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.signup-container .right-side .form-section .social-buttons .social-btn:hover {
+  background: #f0f0f0;
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .signup-container .left-side {
+    display: none;
+  }
+  .signup-container .right-side {
+    padding: 30px 20px;
+    width: 100%;
+  }
+  .signup-container .right-side .form-section .form-group {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=singup.css.map */
