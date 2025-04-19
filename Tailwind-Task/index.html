@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Tailwind-Task</title>
+</head>
+<body>
+
+    <div class="min-h-screen bg-cover bg-no-repeat bg-center text-slate-300 bg-[url('./bg-dark.webp')]">
+        <div class="container mx-auto  px-4 sm:px-6 lg:px-12">
+            <nav class="flex mx-auto w-full max-w-screen-xl items-center justify-between px-8 pt-10 md:flex lg:px-12">
+                <!-- Logo -->
+                <div class="hidden md:flex items-center h-16">
+                    <svg class="h-8 text-white fill-current" viewBox="0 0 55 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.31257 3.02283C6.66833 1.39396 8.30831 0.0734863 9.97559 0.0734863H16.617L11.7216 22.4886H24.4009L22.3396 31.9265H0L6.31257 3.02283Z">
+                        </path>
+                        <path
+                            d="M31.6709 3.02283H41.3312L35.6629 28.977C35.3071 30.606 33.6671 31.9265 31.9998 31.9265H25.3582L31.6709 3.02283Z">
+                        </path>
+                        <path
+                            d="M54.6546 0.0734863H44.9942L38.6817 28.977H45.3232C46.9904 28.977 48.6304 27.6566 48.9862 26.0278L54.6546 0.0734863Z">
+                        </path>
+                        <path d="M19.6357 0.0734863H29.2961L25.0447 19.5391H15.3844L19.6357 0.0734863Z"></path>
+                    </svg>
+                </div>
+                <!-- End Logo -->
+                
+                <!-- Nav Links -->
+                <div class="hidden md:flex px-2 h-12  justify-between items-center py-4 rounded-full bg-gray-700 px-4 py-2 text-white shadow-lg">
+                    <ul class="relative flex items-center space-x-4 pl-4">
+                        <li class="relative">
+                            <a href="#" class="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/20 focus:outline-none text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">About</a>
+                        </li class="relative">
+                        <li class="relative">
+                            <a href="#" class="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/20 focus:outline-none text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">Process</a>
+                        </li class="relative">
+                        <li class="relative">
+                            <a href="#" class="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/20 focus:outline-none text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">Work</a>
+                        </li class="relative">
+                        <li class="relative">
+                            <a href="#" class="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/20 focus:outline-none text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">Pricing</a>
+                        </li class="relative">
+                    </ul>
+                    <div class="relative flex items-center space-x-4 pl-4">
+                        <button type="button">
+                            <span class="font-mono text-blue-300 hover:text-blue-100">EN</span>
+                        </button>
+                        <div class="relative">
+                            <button type="button" class="flex items-center justify-center rounded-full bg-gray-700 p-2 text-blue-300 hover:text-blue-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
+                                <i class="fa-regular fa-moon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="relative h-9 flex-shrink-0 rounded-full bg-gradient-to-b from-indigo-400 to-indigo-500 p-px shadow shadow-indigo-500/25 focus:outline-none focus:ring-1 focus:ring-white/30" type="button">
+                            <div class="group flex h-full items-center justify-center space-x-2 rounded-full bg-indigo-500 text-indigo-50 hover:bg-[#7375EE] font-bold  pl-4 pr-2.5">
+                                <span class="dark:drop-shadow">Get Started</span>
+                                
+                                <svg height="10" viewBox="0 0 20 10" class="fill-current opacity-50 dark:drop-shadow text-white transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5C0.5 4.44772 0.947715 4 1.5 4L18.5 4C19.0523 4 19.5 4.44772 19.5 5C19.5 5.55229 19.0523 6 18.5 6L1.5 6C0.947715 6 0.5 5.55228 0.5 5Z" 
+                                        fill="current" opacity="0" transform-origin="10px 5px" 
+                                        class="scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2071 0.292893C14.8166 -0.0976311 14.1834 -0.0976311 13.7929 0.292893C13.4024 0.683418 13.4024 1.31658 13.7929 1.70711L17.0858 5L13.793 8.29274C13.4025 8.68327 13.4025 9.31643 13.793 9.70696C14.1836 10.0975 14.8167 10.0975 15.2073 9.70696L19.2071 5.70711L19.2073 5.70696C19.5978 5.31643 19.5978 4.68327 19.2073 4.29274C19.2023 4.28781 19.1974 4.28294 19.1924 4.27814L15.2071 0.292893Z" 
+                                        fill="current" transform-origin="16.500100135803223px 4.99993222951889px" 
+                                        class="-translate-x-2 group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                
+            </nav>
+            <!-- End Nav Links -->
+            
+            <!-- Mobile Menu and Button -->
+            <div class="md:hidden flex px-2 h-12 items-center justify-between py-4 rounded-full bg-gray-700 px-4 py-2 text-white shadow-lg">
+                <div class="flex items-center h-10 rounded-full bg-gray-800 px-3 py-1">
+                    <svg class="h-6 text-white fill-current" viewBox="0 0 55 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.31257 3.02283C6.66833 1.39396 8.30831 0.0734863 9.97559 0.0734863H16.617L11.7216 22.4886H24.4009L22.3396 31.9265H0L6.31257 3.02283Z">
+                        </path>
+                        <path
+                            d="M31.6709 3.02283H41.3312L35.6629 28.977C35.3071 30.606 33.6671 31.9265 31.9998 31.9265H25.3582L31.6709 3.02283Z">
+                        </path>
+                        <path
+                            d="M54.6546 0.0734863H44.9942L38.6817 28.977H45.3232C46.9904 28.977 48.6304 27.6566 48.9862 26.0278L54.6546 0.0734863Z">
+                        </path>
+                        <path d="M19.6357 0.0734863H29.2961L25.0447 19.5391H15.3844L19.6357 0.0734863Z"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center h-10 rounded-full bg-gray-800 px-4 py-1">
+                    <button id="mobile-menu-button" class="md:hidden flex text-white focus:outline-none">
+                        <div class="Menu">
+                            <span class=""><i class="fas fa-bars"></i></span>
+                            
+                        </div>
+                    </button>
+                </div>
+                
+            </div>
+            <div id="mobile-menu" class="md:hidden bg-slate-900/90 rounded-lg mt-2 overflow-hidden transition-all duration-300 max-h-0">
+                <div class="px-4 py-2">
+                    <a href="#" class="block px-4 py-3 text-white hover:bg-slate-800/50 rounded-md transition-colors">About</a>
+                    <a href="#" class="block px-4 py-3 text-white hover:bg-slate-800/50 rounded-md transition-colors">Process</a>
+                    <a href="#" class="block px-4 py-3 text-white hover:bg-slate-800/50 rounded-md transition-colors">Work</a>
+                    <a href="#" class="block px-4 py-3 text-white hover:bg-slate-800/50 rounded-md transition-colors">Pricing</a>
+                    <div class="flex items-center px-4 py-3">
+                        <button class="text-white mr-4">
+                            <span class="font-mono">EN</span>
+                        </button>
+                        <button class="text-white">
+                            <i class="fa-regular fa-moon"></i>
+                        </button>
+                    </div>
+                    <button class="w-full bg-indigo-500 text-white font-medium px-5 py-3 rounded-full flex items-center justify-center mt-2 mb-2 transition-colors duration-300">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            <!-- End Mobile Menu and Button -->
+
+            <div class="mx-auto md:pt-40 pb-2 w-full max-w-screen-xl px-8 lg:px-12 sm: pt-20">
+                <div class="mb-1 flex items-center space-x-4 font-mono uppercase text-indigo-500 dark:text-indigo-400 sm:mb-3">
+                    <span>Design Engineering as a Service</span>
+                    <span class="text-black/20 dark:text-white/20">///</span>
+                </div>
+                <h1 class="text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg max-w-2xl">
+                    Make people fall in love with your SaaS product
+                </h1>
+                <p class="text-slate-600 dark:text-slate-300 text-lg mt-8 lg:mt-12 max-w-xl">
+                    <span>The first-ever <b>design engineering subscription for SaaS</b> companies. Thoughtfully crafting compelling sites your visitors won't want to leave.</span>
+                </p>
+                <div class="flex flex-wrap gap-2 mt-8">
+                    <button class="relative h-9 flex-shrink-0 rounded-full bg-gradient-to-b from-indigo-400 to-indigo-500 p-px shadow shadow-indigo-500/25 focus:outline-none focus:ring-1 focus:ring-white/30" type="button">
+                        <div class="group flex h-full items-center justify-center space-x-2 rounded-full bg-indigo-500 text-indigo-50 hover:bg-[#7375EE] font-bold  pl-4 pr-2.5">
+                            <span class="dark:drop-shadow">Get Started</span>
+                            <svg height="10" viewBox="0 0 20 10" class="fill-current opacity-50 dark:drop-shadow text-white transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5C0.5 4.44772 0.947715 4 1.5 4L18.5 4C19.0523 4 19.5 4.44772 19.5 5C19.5 5.55229 19.0523 6 18.5 6L1.5 6C0.947715 6 0.5 5.55228 0.5 5Z" 
+                                    fill="current" opacity="0" transform-origin="10px 5px" 
+                                    class="scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2071 0.292893C14.8166 -0.0976311 14.1834 -0.0976311 13.7929 0.292893C13.4024 0.683418 13.4024 1.31658 13.7929 1.70711L17.0858 5L13.793 8.29274C13.4025 8.68327 13.4025 9.31643 13.793 9.70696C14.1836 10.0975 14.8167 10.0975 15.2073 9.70696L19.2071 5.70711L19.2073 5.70696C19.5978 5.31643 19.5978 4.68327 19.2073 4.29274C19.2023 4.28781 19.1974 4.28294 19.1924 4.27814L15.2071 0.292893Z" 
+                                    fill="current" transform-origin="16.500100135803223px 4.99993222951889px" 
+                                    class="-translate-x-2 group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="relative h-9 rounded-full bg-gradient-to-b from-slate-100 to-slate-200 dark:from-[#393C45] dark:to-[#1A1D24] p-px shadow shadow-black/5 focus:outline-none focus:ring-1 focus:ring-white/20" type="button">
+                        <div class="group flex h-full items-center justify-center space-x-2 rounded-full bg-[#F9FAFB] text-slate-800 hover:bg-white dark:bg-[#171C23] dark:text-slate-50 dark:hover:bg-[#1E242B] font-bold  pl-4 pr-2.5">
+                            <span class="dark:drop-shadow">Schedule a Call</span>
+                            <svg height="10" viewBox="0 0 20 10" class="fill-current opacity-50 dark:drop-shadow text-white transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 5C0.5 4.44772 0.947715 4 1.5 4L18.5 4C19.0523 4 19.5 4.44772 19.5 5C19.5 5.55229 19.0523 6 18.5 6L1.5 6C0.947715 6 0.5 5.55228 0.5 5Z" 
+                                    fill="current" opacity="0" transform-origin="10px 5px" 
+                                    class="scale-x-0 group-hover:opacity-100 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2071 0.292893C14.8166 -0.0976311 14.1834 -0.0976311 13.7929 0.292893C13.4024 0.683418 13.4024 1.31658 13.7929 1.70711L17.0858 5L13.793 8.29274C13.4025 8.68327 13.4025 9.31643 13.793 9.70696C14.1836 10.0975 14.8167 10.0975 15.2073 9.70696L19.2071 5.70711L19.2073 5.70696C19.5978 5.31643 19.5978 4.68327 19.2073 4.29274C19.2023 4.28781 19.1974 4.28294 19.1924 4.27814L15.2071 0.292893Z" 
+                                    fill="current" transform-origin="16.500100135803223px 4.99993222951889px" 
+                                    class="-translate-x-2 group-hover:translate-x-0 transition-transform duration-300 ease-in-out">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="mt-8 sm:mt-12">
+                    <div class="flex items-center">
+                        <div class="flex -space-x-2">
+                            <img class="h-8 w-8 sm:h-10 sm:w-10 rounded-full border-2 border-slate-900" src=""
+                                alt="User">
+                            <img class="h-8 w-8 sm:h-10 sm:w-10 rounded-full border-2 border-slate-900" src=""
+                                alt="User">
+                            <img class="h-8 w-8 sm:h-10 sm:w-10 rounded-full border-2 border-slate-900" src=""
+                                alt="User">
+                            <span class="flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 text-xs font-medium">+12</span>
+                        </div>
+                        <div class="ml-3 sm:ml-4">
+                            <p class="text-xs sm:text-sm">Trusted by great builders like <br><span
+                                    class="font-medium text-white">Johannes Schickling</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mx-auto px-4 pt-8 sm:pt-10 grid grid-cols-3 sm:grid-cols-5 gap-4 sm:gap-8 opacity-80">
+                    <div class="flex items-center justify-center">
+                        <img src="https://lw.works/images/logos/clearyst-white.svg" alt="Clearyst" class="h-6 sm:h-8">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="https://lw.works/images/logos/stackbit-white.svg" alt="Stackbit" class="h-6 sm:h-8">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <img src="https://lw.works/images/logos/contentlayer-white.svg" alt="Contentlayer" class="h-6 sm:h-8">
+                    </div>
+                    <div class="flex items-center justify-center col-span-3 sm:col-span-1">
+                        <img src="https://lw.works/images/logos/urlbox-white.svg" alt="Urlbox" class="h-6 sm:h-8">
+                    </div>
+                    <div class="flex items-center justify-center col-span-3 sm:col-span-1">
+                        <img src="https://lw.works/images/logos/netlify-white.svg" alt="Netlify" class="h-6 sm:h-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>   
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menu = mobileMenuButton.querySelector('.Menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                const isOpen = mobileMenu.classList.toggle('max-h-0');
+                mobileMenu.classList.toggle('max-h-[500px]');
+                mobileMenu.classList.toggle('py-2');
+                menu.classList.toggle('open');
+            });
+        });
+    </script>
+
+</body>
+</html>
