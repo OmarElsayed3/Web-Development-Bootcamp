@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
     Table, 
     TableBody, 
@@ -14,40 +14,22 @@ import {
     Typography,
     Pagination,
     Chip,
-    Skeleton
+    Skeleton 
 } from '@mui/material';
 import { ChevronDown, ChevronUp, Edit2, Trash2 } from 'lucide-react';
-import { fetchUsers } from '../api/userApi';
-import { useUserContext } from './contextUser';
 import UserAvatar from './userAvatar';
 import UserDetails from './userDetails';
 import UserTableHeader from './tableHeader';
+import { useTeamMembers } from '../service/reactQuery';
 
 const UserTable: React.FC = () => {
-    const { 
-        setUsers, 
-        selectedUsers, 
-        setSelectedUsers, 
-        expandedUser, 
-        setExpandedUser, 
-        isLoading,
-        setIsLoading,
-        currentPage,
-        setCurrentPage,
-        totalPages,
-        filteredUsers
-    } = useUserContext();
+    const [currentPage, setCurrentPage] = useState(1);
+    const rowsPerPage = 10;
+    const [searchQuery, setSearchQuery] = useState('');
+    const [selectedUsers, setSelectedUsers] = useState<string[]>([]);
+    const [expandedUser, setExpandedUser] = useState<string | null>(null);
 
-    useEffect(() => {
-        const loadUsers = async () => {
-            setIsLoading(true);
-            const data = await fetchUsers(currentPage, 10);
-            setUsers(data);
-            setIsLoading(false);
-        };
-        
-        loadUsers();
-    }, [currentPage, setIsLoading, setUsers]);
+    const { users, isLoading, isError, totalCount } = useTeamMembers(currentPage, rowsPerPage, searchQuery);
 
     const handleSelectUser = (userId: string) => {
         const selectedIndex = selectedUsers.indexOf(userId);
@@ -68,9 +50,16 @@ const UserTable: React.FC = () => {
         setCurrentPage(value);
     };
 
+    if (isError) {
+        return <Typography>Error loading users</Typography>;
+    }
+
     return (
         <Box sx={{ width: '100%', overflow: 'hidden' }}>
-            <UserTableHeader />
+            <UserTableHeader 
+                searchQuery={searchQuery} 
+                setSearchQuery={setSearchQuery} 
+            />
         
             <Paper sx={{ 
                 width: '100%', 
@@ -86,11 +75,11 @@ const UserTable: React.FC = () => {
                                 <TableCell padding="checkbox">
                                     <Checkbox 
                                         color="primary"
-                                        indeterminate={selectedUsers.length > 0 && selectedUsers.length < filteredUsers.length}
-                                        checked={filteredUsers.length > 0 && selectedUsers.length === filteredUsers.length}
+                                        indeterminate={selectedUsers.length > 0 && selectedUsers.length < users.length}
+                                        checked={users.length > 0 && selectedUsers.length === users.length}
                                         onChange={(event) => {
                                             if (event.target.checked) {
-                                                setSelectedUsers(filteredUsers.map(user => user.name));
+                                                setSelectedUsers(users.map(user => user.id));
                                             } else {
                                                 setSelectedUsers([]);
                                             }
@@ -136,22 +125,42 @@ const UserTable: React.FC = () => {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {isLoading
-                                ? Array.from({ length: 11  }).map((_, index) => (
+                            {isLoading ? (
+                                Array.from({ length: rowsPerPage }).map((_, index) => (
                                     <TableRow key={index}>
-                                        {Array.from({ length: 8 }).map((_, cellIndex) => (
-                                            <TableCell key={cellIndex}>
-                                                <Skeleton variant="text" />
-                                            </TableCell>
-                                        ))}
+                                        <TableCell padding="checkbox">
+                                            <Skeleton variant="rectangular" width={24} height={24} />
+                                        </TableCell>
+                                        <TableCell>
+                                            <Skeleton variant="text" width="80%" />
+                                        </TableCell>
+                                        <TableCell>
+                                            <Skeleton variant="text" width="60%" />
+                                        </TableCell>
+                                        <TableCell>
+                                            <Skeleton variant="text" width="70%" />
+                                        </TableCell>
+                                        <TableCell>
+                                            <Skeleton variant="text" width="50%" />
+                                        </TableCell>
+                                        <TableCell>
+                                            <Skeleton variant="text" width="40%" />
+                                        </TableCell>
+                                        <TableCell>
+                                            <Skeleton variant="text" width="50%" />
+                                        </TableCell>
+                                        <TableCell>
+                                            <Skeleton variant="rectangular" width={24} height={24} />
+                                        </TableCell>
                                     </TableRow>
                                 ))
-                                : filteredUsers.map((user) => {
-                                    const isSelected = selectedUsers.includes(user.name);
-                                    const isExpanded = expandedUser === user.name;
+                            ) : (
+                                users.map((user) => {
+                                    const isSelected = selectedUsers.includes(user.id);
+                                    const isExpanded = expandedUser === user.id;
 
                                     return (
-                                        <React.Fragment key={user.name}>
+                                        <React.Fragment key={user.id}>
                                             <TableRow 
                                                 hover
                                                 selected={isSelected}
@@ -170,7 +179,7 @@ const UserTable: React.FC = () => {
                                                         color="primary"
                                                         checked={isSelected}
                                                         onClick={(event) => event.stopPropagation()}
-                                                        onChange={() => handleSelectUser(user.name)}
+                                                        onChange={() => handleSelectUser(user.id)}
                                                     />
                                                 </TableCell>
                                                 <TableCell 
@@ -183,7 +192,7 @@ const UserTable: React.FC = () => {
                                                 >
                                                     <IconButton 
                                                         size="small" 
-                                                        onClick={() => handleExpandUser(user.name)}
+                                                        onClick={() => handleExpandUser(user.id)}
                                                         sx={{ 
                                                             marginLeft: -1,
                                                             transition: 'transform 0.2s',
@@ -265,7 +274,8 @@ const UserTable: React.FC = () => {
                                             </TableRow>
                                         </React.Fragment>
                                     );
-                                })}
+                                })
+                            )}
                         </TableBody>
                     </Table>
                 </TableContainer>
@@ -279,10 +289,10 @@ const UserTable: React.FC = () => {
                     borderTop: '1px solid rgba(224, 224, 224, 1)'
                 }}>
                     <Typography variant="body2" color="text.secondary">
-                        {currentPage} - {currentPage} of {totalPages}
+                        {currentPage} - {currentPage} of {Math.ceil(totalCount / rowsPerPage)}
                     </Typography>
                     <Pagination 
-                        count={totalPages} 
+                        count={Math.ceil(totalCount / rowsPerPage)} 
                         page={currentPage} 
                         onChange={handlePageChange}
                         color="primary"
