@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImplementQueue")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0f40f31e706dd13e248c1dd4b9bc60e660cf5dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce927e4da7ef77af43ea38399c151a01afb7b8c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImplementQueue")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImplementQueue")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
