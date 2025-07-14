@@ -3,17 +3,14 @@
 public class Solution
 {
     public int LengthOfLongestSubstring(string s) {
-        Dictionary<char,bool> dict = new Dictionary<char,bool>();
-        int left = 0;
-        int maxLength = 0;
-        for (int i = 0; i < s.Length; i++)
-        {
-            while (dict.ContainsKey(s[i]) && dict[s[i]])
-            {
-                dict[s[left]] = false;
+        HashSet<char> set = new HashSet<char>();
+        int left = 0, maxLength = 0;
+        for (int i = 0; i < s.Length; i++) {
+            while (set.Contains(s[i])) {
+                set.Remove(s[left]);
                 left++;
             }
-            dict[s[i]] = true;
+            set.Add(s[i]);
             maxLength = Math.Max(maxLength, i - left + 1);
         }
         return maxLength;
