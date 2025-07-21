@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SimplifyPath")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce927e4da7ef77af43ea38399c151a01afb7b8c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff990883c71e9754d94c26105b52c0d95f773be0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SimplifyPath")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SimplifyPath")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
