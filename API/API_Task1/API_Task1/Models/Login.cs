@@ -8,5 +8,5 @@ public class Login
     public int EmployeeId { get; set; }
     
     //Navigation Property
-    public Employee Employee { get; set; }
+    public virtual Employee Employee { get; set; }
 }

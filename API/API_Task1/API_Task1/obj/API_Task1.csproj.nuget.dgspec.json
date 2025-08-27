@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\C#\\API_Task1\\API_Task1\\API_Task1.csproj": {}
+    "D:\\Projects\\Web-Development-Bootcamp\\API\\API_Task1\\API_Task1\\API_Task1.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\C#\\API_Task1\\API_Task1\\API_Task1.csproj": {
+    "D:\\Projects\\Web-Development-Bootcamp\\API\\API_Task1\\API_Task1\\API_Task1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\C#\\API_Task1\\API_Task1\\API_Task1.csproj",
+        "projectUniqueName": "D:\\Projects\\Web-Development-Bootcamp\\API\\API_Task1\\API_Task1\\API_Task1.csproj",
         "projectName": "API_Task1",
-        "projectPath": "D:\\Projects\\C#\\API_Task1\\API_Task1\\API_Task1.csproj",
+        "projectPath": "D:\\Projects\\Web-Development-Bootcamp\\API\\API_Task1\\API_Task1\\API_Task1.csproj",
         "packagesPath": "C:\\Users\\Storm\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\C#\\API_Task1\\API_Task1\\obj\\",
+        "outputPath": "D:\\Projects\\Web-Development-Bootcamp\\API\\API_Task1\\API_Task1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -10,7 +10,7 @@ public class Employee
     public int? RoleId { get; set; }
 
     //Navigation Property
-    public Department Department { get; set; }
-    public Role Role { get; set; }
-    public Login Login { get; set; }
+    public virtual Department Department { get; set; }
+    public virtual Role Role { get; set; }
+    public virtual Login Login { get; set; }
 }

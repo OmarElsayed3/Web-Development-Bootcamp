@@ -7,5 +7,5 @@ public class Department
     public string Description { get; set; }
     
     //Navigation Property
-    public List<Employee> Employees { get; set; }
+    public virtual ICollection<Employee> Employees { get; set; }
 }
