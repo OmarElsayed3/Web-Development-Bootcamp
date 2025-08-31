@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "40Us1WhW9Tw=",
+  "dgSpecHash": "KwcOBrh29ec=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\C#\\API_Task2\\API_Task2\\API_Task2.csproj",
+  "projectFilePath": "D:\\Projects\\Web-Development-Bootcamp\\API\\API_Task2\\API_Task2\\API_Task2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Storm\\.nuget\\packages\\automapper\\15.0.1\\automapper.15.0.1.nupkg.sha512",
     "C:\\Users\\Storm\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

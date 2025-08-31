@@ -4208,11 +4208,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\C#\\API_Task2\\API_Task2\\API_Task2.csproj",
+      "projectUniqueName": "D:\\Projects\\Web-Development-Bootcamp\\API\\API_Task2\\API_Task2\\API_Task2.csproj",
       "projectName": "API_Task2",
-      "projectPath": "D:\\Projects\\C#\\API_Task2\\API_Task2\\API_Task2.csproj",
+      "projectPath": "D:\\Projects\\Web-Development-Bootcamp\\API\\API_Task2\\API_Task2\\API_Task2.csproj",
       "packagesPath": "C:\\Users\\Storm\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\C#\\API_Task2\\API_Task2\\obj\\",
+      "outputPath": "D:\\Projects\\Web-Development-Bootcamp\\API\\API_Task2\\API_Task2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
