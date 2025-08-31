@@ -8,6 +8,4 @@ public class Role
     
     //Navigation Property
     public virtual ICollection<Employee> Employees { get; set; }
-
-    
 }
