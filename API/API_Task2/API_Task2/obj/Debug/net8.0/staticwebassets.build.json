@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "bVCxHlkVp4e8sDfNr0oyEMELm2F9A/c3c8YLQUteyak=",
+  "Source": "API_Task2",
+  "BasePath": "_content/API_Task2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API_Task2\\wwwroot",
+      "Source": "API_Task2",
+      "ContentRoot": "D:\\Projects\\C#\\API_Task2\\API_Task2\\wwwroot\\",
+      "BasePath": "_content/API_Task2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Projects\\C#\\API_Task2\\API_Task2\\wwwroot\\employee\\363492c3-faef-4fa9-8e92-b37cdbbe5771.png",
+      "SourceId": "API_Task2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\C#\\API_Task2\\API_Task2\\wwwroot\\",
+      "BasePath": "_content/API_Task2",
+      "RelativePath": "employee/363492c3-faef-4fa9-8e92-b37cdbbe5771.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\employee\\363492c3-faef-4fa9-8e92-b37cdbbe5771.png"
+    },
+    {
+      "Identity": "D:\\Projects\\C#\\API_Task2\\API_Task2\\wwwroot\\employee\\f51cf458-cb44-4d16-a553-c41478d01214.jpg",
+      "SourceId": "API_Task2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\C#\\API_Task2\\API_Task2\\wwwroot\\",
+      "BasePath": "_content/API_Task2",
+      "RelativePath": "employee/f51cf458-cb44-4d16-a553-c41478d01214.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\employee\\f51cf458-cb44-4d16-a553-c41478d01214.jpg"
+    }
+  ]
+}
