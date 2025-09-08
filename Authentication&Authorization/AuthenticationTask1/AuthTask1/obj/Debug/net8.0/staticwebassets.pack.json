@@ -1,20 +1,12 @@
 {
   "Files": [
     {
-      "Id": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\images\\products\\07ccc36c-9bd1-49ac-8cb5-1267f28e17ae_wallpaperflare.com_wallpaper (5).jpg",
-      "PackagePath": "staticwebassets\\images\\products\\07ccc36c-9bd1-49ac-8cb5-1267f28e17ae_wallpaperflare.com_wallpaper (5).jpg"
+      "Id": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\HtmlTemplates\\ConfirmEmail.html",
+      "PackagePath": "staticwebassets\\HtmlTemplates\\ConfirmEmail.html"
     },
     {
-      "Id": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\images\\products\\7cc96f05-b212-4711-8c85-0e6c128c36ec_wallpaperflare.com_wallpaper (4).jpg",
-      "PackagePath": "staticwebassets\\images\\products\\7cc96f05-b212-4711-8c85-0e6c128c36ec_wallpaperflare.com_wallpaper (4).jpg"
-    },
-    {
-      "Id": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\images\\products\\8f1addfb-b969-4962-829e-79c081d3502f_wallpaperflare.com_wallpaper.jpg",
-      "PackagePath": "staticwebassets\\images\\products\\8f1addfb-b969-4962-829e-79c081d3502f_wallpaperflare.com_wallpaper.jpg"
-    },
-    {
-      "Id": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\images\\products\\eb66bdff-6b51-47cb-a031-9c6459bdf098_wallpaperflare.com_wallpaper.jpg",
-      "PackagePath": "staticwebassets\\images\\products\\eb66bdff-6b51-47cb-a031-9c6459bdf098_wallpaperflare.com_wallpaper.jpg"
+      "Id": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\HtmlTemplates\\ResetPassword.html",
+      "PackagePath": "staticwebassets\\HtmlTemplates\\ResetPassword.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AuthTask1.Microsoft.AspNetCore.StaticWebAssets.props",

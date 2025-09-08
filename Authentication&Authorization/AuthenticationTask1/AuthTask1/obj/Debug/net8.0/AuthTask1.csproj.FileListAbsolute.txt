@@ -151,3 +151,9 @@ D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\Authentication
 D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\AuthenticationTask1\AuthTask1\obj\Debug\net8.0\AuthTask1.genruntimeconfig.cache
 D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\AuthenticationTask1\AuthTask1\obj\Debug\net8.0\ref\AuthTask1.dll
 D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\AuthenticationTask1\AuthTask1\bin\Debug\net8.0\AuthTask1.staticwebassets.runtime.json
+D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\AuthenticationTask1\AuthTask1\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\AuthenticationTask1\AuthTask1\bin\Debug\net8.0\Handlebars.dll
+D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\AuthenticationTask1\AuthTask1\bin\Debug\net8.0\MailKit.dll
+D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\AuthenticationTask1\AuthTask1\bin\Debug\net8.0\MimeKit.dll
+D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\AuthenticationTask1\AuthTask1\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Projects\Web-Development-Bootcamp\Authentication&Authorization\AuthenticationTask1\AuthTask1\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z9Opj8GCgXjTM5vOT0ZWBHN00VbyrQOfimkHE17eiIw=",
+  "Hash": "to3qS4tabo5HQ4m1ccpFdvFk21q/qHMZyu9skCj/Ag8=",
   "Source": "AuthTask1",
   "BasePath": "_content/AuthTask1",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\images\\products\\07ccc36c-9bd1-49ac-8cb5-1267f28e17ae_wallpaperflare.com_wallpaper (5).jpg",
+      "Identity": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\HtmlTemplates\\ConfirmEmail.html",
       "SourceId": "AuthTask1",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\",
       "BasePath": "_content/AuthTask1",
-      "RelativePath": "images/products/07ccc36c-9bd1-49ac-8cb5-1267f28e17ae_wallpaperflare.com_wallpaper (5).jpg",
+      "RelativePath": "HtmlTemplates/ConfirmEmail.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,15 +33,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\07ccc36c-9bd1-49ac-8cb5-1267f28e17ae_wallpaperflare.com_wallpaper (5).jpg"
+      "OriginalItemSpec": "wwwroot\\HtmlTemplates\\ConfirmEmail.html"
     },
     {
-      "Identity": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\images\\products\\7cc96f05-b212-4711-8c85-0e6c128c36ec_wallpaperflare.com_wallpaper (4).jpg",
+      "Identity": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\HtmlTemplates\\ResetPassword.html",
       "SourceId": "AuthTask1",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\",
       "BasePath": "_content/AuthTask1",
-      "RelativePath": "images/products/7cc96f05-b212-4711-8c85-0e6c128c36ec_wallpaperflare.com_wallpaper (4).jpg",
+      "RelativePath": "HtmlTemplates/ResetPassword.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,45 +52,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\7cc96f05-b212-4711-8c85-0e6c128c36ec_wallpaperflare.com_wallpaper (4).jpg"
-    },
-    {
-      "Identity": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\images\\products\\8f1addfb-b969-4962-829e-79c081d3502f_wallpaperflare.com_wallpaper.jpg",
-      "SourceId": "AuthTask1",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\",
-      "BasePath": "_content/AuthTask1",
-      "RelativePath": "images/products/8f1addfb-b969-4962-829e-79c081d3502f_wallpaperflare.com_wallpaper.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\8f1addfb-b969-4962-829e-79c081d3502f_wallpaperflare.com_wallpaper.jpg"
-    },
-    {
-      "Identity": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\images\\products\\eb66bdff-6b51-47cb-a031-9c6459bdf098_wallpaperflare.com_wallpaper.jpg",
-      "SourceId": "AuthTask1",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\Web-Development-Bootcamp\\Authentication&Authorization\\AuthenticationTask1\\AuthTask1\\wwwroot\\",
-      "BasePath": "_content/AuthTask1",
-      "RelativePath": "images/products/eb66bdff-6b51-47cb-a031-9c6459bdf098_wallpaperflare.com_wallpaper.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\eb66bdff-6b51-47cb-a031-9c6459bdf098_wallpaperflare.com_wallpaper.jpg"
+      "OriginalItemSpec": "wwwroot\\HtmlTemplates\\ResetPassword.html"
     }
   ]
 }

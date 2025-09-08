@@ -22,6 +22,23 @@ namespace AuthTask1.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("AuthTask1.Dto.Email.OtpEntry", b =>
+                {
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("ExpirationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Otp")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Email");
+
+                    b.ToTable("OtpEntries");
+                });
+
             modelBuilder.Entity("AuthTask1.Models.Cart", b =>
                 {
                     b.Property<int>("Id")

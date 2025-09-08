@@ -1,4 +1,5 @@
-﻿using AuthTask1.Models;
+﻿using AuthTask1.Dto.Email;
+using AuthTask1.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,7 @@ public class ApplicationDbContext : IdentityDbContext<User>
     public DbSet<Product> Products { get; set; }
     public DbSet<Cart> Carts { get; set; }
     public DbSet<CartItem> CartItems { get; set; }
+    public DbSet<OtpEntry> OtpEntries { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

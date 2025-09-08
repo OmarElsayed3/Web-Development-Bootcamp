@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/AuthTask1/Dto/Email/OtpEntryDto.cs">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/AuthTask1/Dto/Email/OtpEntryDto.cs" />
+              <option name="updatedContent" value="using System;&#10;&#10;namespace AuthTask1.Dto.Email;&#10;&#10;public class OtpEntryDto&#10;{&#10;    public string Email { get; set; }&#10;    public string Otp { get; set; }&#10;    public DateTime ExpirationTime { get; set; }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -5,7 +5,10 @@ using AuthTask1.Helpers;
 using AuthTask1.Middlewares;
 using AuthTask1.Models;
 using AuthTask1.Services.Implementations;
+using AuthTask1.Services.Implementations.EmailService;
 using AuthTask1.Services.Interfaces;
+using AuthTask1.Services.Interfaces.IEmailService;
+using AuthTask1.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -59,12 +62,43 @@ builder.Services.AddAutoMapper(cfg => { }, Assembly.GetExecutingAssembly());
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IMailConfirmationService, MailConfirmationService>();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<IOtpEntryService, OtpEntryService>();
+builder.Services.AddScoped<IResetPassword, ResetPassword>();
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+var configuration = builder.Configuration;
+var mailSetting = configuration.GetSection("Mail").Get<MailSetting>();
+if (mailSetting == null)
+{
+    throw new InvalidOperationException("Mail configuration section is missing or invalid.");
+}
+builder.Services.AddSingleton(mailSetting);
+
+// Configure Server settings
+var serverSetting = configuration.GetSection("Server").Get<ServerSetting>();
+if (serverSetting == null)
+{
+    throw new InvalidOperationException("Server configuration section is missing or invalid.");
+}
+builder.Services.AddSingleton(serverSetting);
+
+// Configure DataProtectionTokenProvider settings
+var dataProtectionTokenProviderSetting = configuration.GetSection("DataProtectionTokenProvider").Get<DataProtectionTokenProviderSetting>();
+if (dataProtectionTokenProviderSetting == null)
+{
+    throw new InvalidOperationException("DataProtectionTokenProvider configuration section is missing or invalid.");
+}
+builder.Services.AddSingleton(dataProtectionTokenProviderSetting);
+
 builder.Services.AddEndpointsApiExplorer();
 
 // Add Token To Swagger
