@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryImplementation.Api", "RepositoryImplementation.Api\RepositoryImplementation.Api.csproj", "{135B0011-7996-43BB-AA84-23450BC8FB2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-3", "Task-3\Task-3.csproj", "{135B0011-7996-43BB-AA84-23450BC8FB2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
