@@ -19,10 +19,17 @@
         {
             _context.Set<TEntity>().Remove(entity);
         }
-
-        public virtual async Task<List<TEntity>> GetAll()
+        public virtual async Task<List<TEntity>> GetAll(IBaseSpecification<TEntity> spec)
         {
-            return await _context.Set<TEntity>().ToListAsync();
+            var query = SpecificationEvaluator<TEntity>.GetQueryWithSpec(_context.Set<TEntity>().AsQueryable(), spec);
+            return await query.ToListAsync();
+        }
+
+        public virtual async Task<int> CountAsync(IBaseSpecification<TEntity> spec)
+        {
+            // Count should not apply pagination
+            var query = SpecificationEvaluator<TEntity>.GetQueryWithSpec(_context.Set<TEntity>().AsQueryable(), new NoPaginationSpecification<TEntity>(spec));
+            return await query.CountAsync();
         }
 
         public virtual async Task<TEntity> GetById(int id)

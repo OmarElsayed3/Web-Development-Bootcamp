@@ -3,9 +3,9 @@
 public class StudentController : BaseController
 {
     [HttpGet(Router.StudentRouter.Main)]
-    public async Task<IActionResult> All()
+    public async Task<IActionResult> All([FromQuery] int pageIndex = 1, [FromQuery] int pageSize = 10, [FromQuery] string? name = null)
     {
-        var result = await mediator.Send(new GetAllStudentDto());
+        var result = await mediator.Send(new GetAllStudentDto { PageIndex = pageIndex, PageSize = pageSize, Name = name });
         return Result(result);
     }
 

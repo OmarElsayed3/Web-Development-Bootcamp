@@ -1,5 +1,3 @@
-using Task_3.Repositories.Dependencies;
-
 var builder = WebApplication.CreateBuilder(args);
 
 

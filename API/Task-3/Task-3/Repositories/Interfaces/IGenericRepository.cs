@@ -4,8 +4,6 @@
     {
         public Task Create(TEntity entity);
 
-        public Task<List<TEntity>> GetAll();
-
         public Task<TEntity> GetById(int id);
 
         // For composite key support (StudentCourse)
@@ -14,5 +12,10 @@
         public Task Update(TEntity entity);
 
         public void Delete(TEntity entity);
+
+        // New: GetAll with specification (filtering, includes, ordering, pagination)
+        Task<List<TEntity>> GetAll(IBaseSpecification<TEntity> spec);
+        // New: Get count for pagination
+        Task<int> CountAsync(IBaseSpecification<TEntity> spec);
     }
 }

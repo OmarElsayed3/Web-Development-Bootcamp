@@ -15,14 +15,27 @@ public class StudentQueryHandler :
 
     public async Task<Response> Handle(GetAllStudentDto request, CancellationToken cancellationToken)
     {
-        var students = await _unitOfWork.Repository<Task_3.Models.Student>().GetAll();
+        var spec = new BaseSpecification.BaseSpecification<Task_3.Models.Student>();
+        if (!string.IsNullOrWhiteSpace(request.Name))
+            spec.AddCriteria(s => s.Name.Contains(request.Name));
+        spec.ApplyPagination((request.PageIndex - 1) * request.PageSize, request.PageSize);
+
+        var students = await _unitOfWork.Repository<Task_3.Models.Student>().GetAll(spec);
+        var totalCount = await _unitOfWork.Repository<Task_3.Models.Student>().CountAsync(spec);
         var studentDtos = _mapper.Map<List<StudentDto>>(students);
+        var paginatedResult = new PaginatedResult<StudentDto>
+        {
+            Items = studentDtos,
+            TotalCount = totalCount,
+            PageIndex = request.PageIndex,
+            PageSize = request.PageSize
+        };
         return new Response
         {
             Status = true,
             StatusCode = HttpStatusCode.OK,
             Message = "Students retrieved successfully.",
-            Data = studentDtos
+            Data = paginatedResult
         };
     }
 

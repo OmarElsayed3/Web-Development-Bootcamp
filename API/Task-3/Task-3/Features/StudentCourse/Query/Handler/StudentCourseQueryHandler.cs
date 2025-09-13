@@ -15,7 +15,13 @@ public class StudentCourseQueryHandler :
 
     public async Task<Response> Handle(GetAllStudentCourseDto request, CancellationToken cancellationToken)
     {
-        var studentCourses = await _unitOfWork.Repository<Task_3.Models.StudentCourse>().GetAll();
+        var spec = new BaseSpecification.BaseSpecification<Task_3.Models.StudentCourse>();
+        if (request.StudentId.HasValue)
+            spec.AddCriteria(sc => sc.StudentId == request.StudentId.Value);
+        if (request.CourseId.HasValue)
+            spec.AddCriteria(sc => sc.CourseId == request.CourseId.Value);
+
+        var studentCourses = await _unitOfWork.Repository<Task_3.Models.StudentCourse>().GetAll(spec);
         var studentCourseDtos = _mapper.Map<List<StudentCourseDto>>(studentCourses);
         return new Response
         {
@@ -48,4 +54,3 @@ public class StudentCourseQueryHandler :
         };
     }
 }
-
