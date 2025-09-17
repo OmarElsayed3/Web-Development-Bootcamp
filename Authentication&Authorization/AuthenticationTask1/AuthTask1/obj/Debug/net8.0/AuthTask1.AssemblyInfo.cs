@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthTask1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6411c8419866ac1b5cf37bd9b1f0f57cb97353c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43871fcc0d88bd423b9dcb7bcd3f5f181d251989")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthTask1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthTask1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
