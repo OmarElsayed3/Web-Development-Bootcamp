@@ -1,0 +1,19 @@
+﻿using CleanArch.Domain.Models.Base;
+using CleanArch.Domain.Models.CartItems;
+using CleanArch.Domain.Models.Categories;
+
+namespace CleanArch.Domain.Models.Products;
+
+public class Product : Entity, IAuditableEntity, ISoftDeletableEntity
+{
+    public string Name { get; set; } = null!;
+    public string? Description { get; set; }
+    public decimal Price { get; set; }
+    public int Stock { get; set; }
+    public Guid? CategoryId { get; set; }
+
+    // Navigation property
+    public virtual Category? Category { get; set; }
+    public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
+
+}

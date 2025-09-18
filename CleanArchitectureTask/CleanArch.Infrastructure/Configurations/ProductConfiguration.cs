@@ -1,0 +1,40 @@
+﻿using CleanArch.Domain.Models.Categories;
+using CleanArch.Domain.Models.Products;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace CleanArch.Infrastructure.Configurations
+{
+    public class ProductConfiguration : IEntityTypeConfiguration<Product>
+    {
+        public void Configure(EntityTypeBuilder<Product> builder)
+        {
+            builder
+                .Property(x => x.Name)
+                .IsRequired()
+                .HasMaxLength(ProductConstants.ProductNameMaxLengthValue);
+            
+            builder
+                .HasOne<Category>(s => s.Category)
+                .WithMany(g => g.Products)
+                .HasForeignKey(s => s.CategoryId);
+
+            builder
+                .Property(x => x.Price)
+                .IsRequired()
+                .HasColumnType("decimal(18,2)");
+
+            builder
+                .Property(x => x.CreatedAt)
+                .HasDefaultValueSql("getdate()");
+
+            builder
+                .Property(x => x.UpdatedAt)
+                .HasDefaultValueSql("getdate()");
+
+
+            builder
+                .HasQueryFilter(p => !p.IsDeleted);
+        }
+    }
+}

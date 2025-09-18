@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Presentaion", "CleanArch.Presentaion\CleanArch.Presentaion.csproj", "{443CDB07-9810-4640-98A7-510F6125D286}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Presentation", "CleanArch.Presentation\CleanArch.Presentation.csproj", "{443CDB07-9810-4640-98A7-510F6125D286}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{161606A0-C7E0-47EA-B2E7-65817A3B7C10}"
 EndProject
